@@ -11,10 +11,16 @@
 				@content;
 			}
 		}
+		$xSmall: 720px;
+		@mixin xSmallDisplay{
+			@media(max-width: #{$xSmall}){
+				@content;
+			}
+		}
 
 		* {
-		margin: 0px;
-		padding: 0px;
+			margin: 0px;
+			padding: 0px;
 		  border: 0px;
 		  font-size:13px;
 		}
@@ -197,7 +203,7 @@
 					top:0;
 					right: 0;
 					margin: 1vw 2vw auto auto;
-					font-size: 5vh;
+					font-size: 8vh;
 					opacity: 0;
 					animation: slide-close 3s 1s forwards;
 				}
@@ -283,7 +289,7 @@
 			text-align:center;
 		}
 		.navL a{
-				font-size: 16px;
+			font-size: 16px;
 			text-decoration: none;
 			color: white;
 			/*text-shadow: rgba(255,  255, 255,0.5) 2px 3px 8px,
@@ -312,14 +318,18 @@
 			grid-area: titulo-end / navL-start / conteudob-start / span 2; /*when mobile uses also navL space*/
 			//margin: 0 15%;
 			/*right cell doesnt occupy left cell when media is desktop*/
-			@include bigDisplay{grid-area: conteudo;
+			@include bigDisplay{
+				grid-area: conteudo;
 			}
 		}
 		.centralContent{
-			p{
-				@include bigDisplay{font-size: 16px;}
+			@include bigDisplay{
+				p{
+					font-size: 16px;
+				}
+				margin:11vh 0 0 11vh;
 			}
-			margin:11vh 0 0 11vh;
+			margin:3vh auto auto 3vh;
 		}
 		#main2{
 			overflow: auto;
@@ -465,7 +475,10 @@
 
 		.video{
 			width: 90vw;
-			@include bigDisplay{width: 60vw;}
+			@include bigDisplay{
+				width: 60vw;
+			}
+
 		}
 
 		.box{
