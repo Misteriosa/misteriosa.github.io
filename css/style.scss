@@ -11,13 +11,6 @@
 				@content;
 			}
 		}
-		$xSmall: 720px;
-		@mixin xSmallDisplay{
-			@media(max-width: #{$xSmall}){
-				@content;
-			}
-		}
-
 		* {
 			margin: 0px;
 			padding: 0px;
@@ -138,6 +131,7 @@
 
 		}
 		#navMobile{
+			  overflow: auto;
 			  	display:none;
 			  	background:#6154bf; /*linear-gradient(to bottom, rgba(147,60,224,1) 0%,rgba(142,70,214,1) 2%,rgba(97,84,191,1) 44%,rgba(95,83,188,1) 100%); */
 				/*   #6154bf #826ee4 ->lilas claro */
@@ -413,7 +407,7 @@
 
 			background: linear-gradient(to right, rgba(242,161,48,1) 0%,rgba(246,146,48,1) 3%,rgba(244,130,59,1) 8%,rgba(232,103,64,1) 19%,rgba(241,97,71,1) 27%,rgba(240,86,74,1) 35%,rgba(239,77,75,1) 42%,rgba(233,71,84,1) 50%,rgba(219,64,96,1) 60%,rgba(203,67,117,1) 70%,rgba(195,66,123,1) 78%,rgba(186,65,132,1) 85%,rgba(172,69,148,1) 93%,rgba(161,74,178,1) 100%);
 			background-size: auto 100% ;
-			grid-area: span 1 / navL-start / conteudohg-end / span 2;
+			grid-area: span 1 / navL-start / conteudog-end / span 2;
 			/*right cell doesnt occupy left cell when media is desktop*/
 			@include bigDisplay{grid-area: conteudog;}
 		}

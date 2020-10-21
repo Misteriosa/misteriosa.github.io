@@ -119,6 +119,7 @@ header #toggle {
 }
 
 #navMobile {
+  overflow: auto;
   display: none;
   background: #6154bf;
   /*linear-gradient(to bottom, rgba(147,60,224,1) 0%,rgba(142,70,214,1) 2%,rgba(97,84,191,1) 44%,rgba(95,83,188,1) 100%); */
@@ -476,7 +477,7 @@ header #toggle {
   text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
   background: linear-gradient(to right, #f2a130 0%, #f69230 3%, #f4823b 8%, #e86740 19%, #f16147 27%, #f0564a 35%, #ef4d4b 42%, #e94754 50%, #db4060 60%, #cb4375 70%, #c3427b 78%, #ba4184 85%, #ac4594 93%, #a14ab2 100%);
   background-size: auto 100%;
-  grid-area: span 1/navL-start/conteudohg-end/span 2;
+  grid-area: span 1/navL-start/conteudog-end/span 2;
   /*right cell doesnt occupy left cell when media is desktop*/
 }
 @media (min-width: 900px) {
