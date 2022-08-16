@@ -75,7 +75,7 @@
 				position:fixed;
 				z-index: 4;
 				top:0;
-				margin: 1vw auto auto 2vw;
+				margin: 1.8px auto auto 2vw;
 				font-size: 5vh;
 				cursor: pointer;
 				@include bigDisplay{
@@ -108,7 +108,7 @@
 		}
 		.positioned {
 			height: 7vh;/*Se muda isso, tem q mudar os 'top' e 'height' no menu. 1vh = 1% viewport height*/
-  		width: 0%;
+  			width: 0%;
 			/*background: rgba(252,  93, 104,.3); */
 			background: #ff997a; /*laranja*/
 		}
@@ -116,9 +116,9 @@
 		.barTitle{
 			position:absolute;
 			right:0;
-			margin: 2vh 2vh 2vh 2vh;
+			margin: 1.8px 3vh 2vh 2vh;
 			/*right: 50%;   como eh absolute, em % fica relativo ao div parente*/
-			font-size: 4vw;
+			font-size: 5vh;
 			@include bigDisplay{
 				font-size: 5vh;
 				/*when in desktop small menu icon is not showed */

@@ -27,7 +27,7 @@ function center(e){
 function right(e){
 	var title= document.getElementsByClassName(e)[0];
 	title.style.right = 0+'px';
-	title.style.marginRight= '5vw';
+	title.style.marginRight= '3vh';//if this is changed, has to change in the css inside barTitle
 }
 center('maintext');
 center('footTitle');
@@ -35,8 +35,9 @@ center('footTitle');
 if (matchMedia('(min-width: 900px)').matches) {
 center('barTitle');
 }
-/*reload page when window is resized, so that javascr is reloaded with the new width and h of the viewport. location refers to the url*/
-window.onresize = function(){ 
+/*reload page when window is resized, so that javascr is reloaded with the new width and h of the viewport. 
+location refers to the url*/
+window.onresize = function(){
 	center('maintext');
 	center('footTitle');
 	right('barTitle');

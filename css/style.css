@@ -43,7 +43,7 @@ header {
     position: fixed;
     z-index: 4;
     top: 0;
-    margin: 1vw auto auto 2vw;
+    margin: 1.8px auto auto 2vw;
     font-size: 5vh;
     cursor: pointer; }
     @media (min-width: 900px) {
@@ -85,9 +85,9 @@ header {
 .barTitle {
   position: absolute;
   right: 0;
-  margin: 2vh 2vh 2vh 2vh;
+  margin: 1.8px 3vh 2vh 2vh;
   /*right: 50%;   como eh absolute, em % fica relativo ao div parente*/
-  font-size: 4vw;
+  font-size: 5vh;
   color: #a14ab1;
   /* #a14ab1 */
   /*text-shadow:
