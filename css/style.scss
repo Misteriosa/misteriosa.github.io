@@ -279,7 +279,7 @@
     		list-style-type: none;
 		}
 		.navL li{
-			margin: 5vh auto;
+			margin: 4vh auto;
 			text-align:center;
 		}
 		.navL a{
@@ -478,3 +478,21 @@
 		.box{
 			margin: 2.5em 0 0 0;
 		}
+
+@media(max-height: 300px){
+  .navL li{
+    margin: 1vh auto;
+  }
+}
+
+@media(min-height: 301px) and (max-height:400px){
+  .navL li{
+    margin: 1.5vh auto;
+  }
+}
+
+@media(min-height: 401px) and (max-height:600px){
+  .navL li{
+    margin: 2.5vh auto;
+  }
+}
