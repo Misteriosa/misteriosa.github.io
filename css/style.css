@@ -282,9 +282,7 @@ header {
 #maine {
   overflow: auto;
   color: white;
-  /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
-  background: linear-gradient(to bottom, #e57f60 0%, #e15874 100%);
+  background: #a249ae;
   /*background: linear-gradient(to bottom, rgba(255,255,255,.5), rgba(255,255,255,0)5%, rgba(255,255,255,0)95%, rgba(255,255,255,0.95) ),
   linear-gradient(to right, rgba(255,255,255,.95), rgba(255,255,255,.5)5%, rgba(255,255,255,.5)95%, rgba(255,255,255,0.95) ), url("images/purple.jpg");*/
   background-size: auto 100%;
@@ -300,15 +298,31 @@ header {
   margin: 3vh auto auto 3vh; }
   @media (min-width: 900px) {
     .centralContent {
-      margin: 11vh 0 0 11vh; }
-      .centralContent p {
-        font-size: 16px; } }
+      margin: 11vh 0 0 11vh; } }
+  .centralContent p {
+    font-size: 40px;
+    /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+    			rgba(252,  93, 104,0.7) -1px -2px 8px,
+    			rgba(0,0,0,0.1) 1px 2px 8px,
+    			rgba(0,0,0,0.1) -1px -2px 8px;*/ }
+  .centralContent h2 {
+    color: #e2a9a9;
+    line-height: 1.26;
+    letter-spacing: 0.09em; }
+  .centralContent .text {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
 
 #main2 {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to right, #fc757f 1%, #e15974 100%);
   /*rgba(252, 93, 104, 0.85);*/
   background-size: auto 100%;
@@ -322,7 +336,10 @@ header {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to left, #8d46d6 1%, #6d50c5 100%);
   background-size: auto 100%;
   grid-area: span 1 / navL-start / conteudod-start / span 2;
@@ -335,7 +352,10 @@ header {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to right, #cd4373 0%, #a8479f 58%, #9f36c9 100%);
   background-size: auto 100%;
   grid-area: span 1 / navL-start / conteudoe-start / span 2;
@@ -348,7 +368,10 @@ header {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to right, #f2a130 0%, #f69230 3%, #f4823b 8%, #e86740 19%, #f16147 27%, #f0564a 35%, #ef4d4b 42%, #e94754 50%, #db4060 60%, #cb4375 70%, #c3427b 78%, #ba4184 85%, #ac4594 93%, #a14ab2 100%);
   background-size: auto 100%;
   grid-area: span 1 / navL-start / conteudof-start / span 2;
@@ -361,7 +384,10 @@ header {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to right, #f2a130 0%, #f69230 3%, #f4823b 8%, #e86740 19%, #f16147 27%, #f0564a 35%, #ef4d4b 42%, #e94754 50%, #db4060 60%, #cb4375 70%, #c3427b 78%, #ba4184 85%, #ac4594 93%, #a14ab2 100%);
   background-size: auto 100%;
   grid-area: span 1 / navL-start / conteudof-end / span 2;
@@ -374,7 +400,10 @@ header {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to right, #f2a130 0%, #f69230 3%, #f4823b 8%, #e86740 19%, #f16147 27%, #f0564a 35%, #ef4d4b 42%, #e94754 50%, #db4060 60%, #cb4375 70%, #c3427b 78%, #ba4184 85%, #ac4594 93%, #a14ab2 100%);
   background-size: auto 100%;
   grid-area: span 1 / navL-start / conteudog-end / span 2;
@@ -387,7 +416,10 @@ header {
   overflow: auto;
   color: white;
   /*#fc5d68 => rosa*/
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px;
+  /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
+  			rgba(252,  93, 104,0.7) -1px -2px 8px,
+  			rgba(0,0,0,0.1) 1px 2px 8px,
+  			rgba(0,0,0,0.1) -1px -2px 8px;*/
   background: linear-gradient(to right, #f2a130 0%, #f69230 3%, #f4823b 8%, #e86740 19%, #f16147 27%, #f0564a 35%, #ef4d4b 42%, #e94754 50%, #db4060 60%, #cb4375 70%, #c3427b 78%, #ba4184 85%, #ac4594 93%, #a14ab2 100%);
   background-size: auto 100%;
   grid-area: span 1 / navL-start / conteudoh-end / span 2;
@@ -415,10 +447,11 @@ footer {
     .footTitle {
       font-size: 3vh; } }
 
-/*transition when link is clicked*/
 #maine, #main2, #main3, #main4, #main5, #main6, #main7, #main8 {
+  /*transition when link is clicked*/
   opacity: 1;
-  transition: 2s opacity; }
+  transition: 2s opacity;
+  background: #a249ae; }
 
 #maine.fade-out, #main2.fade-out, #main3.fade-out, #main4.fade-out, #main5.fade-out, #main6.fade-out, #main7.fade-out, #main8.fade-out {
   opacity: 0;

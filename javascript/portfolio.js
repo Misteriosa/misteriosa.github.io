@@ -11,7 +11,6 @@ $(window).scroll(function () {
   $('.positioned').css('width', scrolled + '%');
 });
 
-
 function center(e){
 	//position title of topic in center
 	var title= document.getElementsByClassName(e)[0];
@@ -23,18 +22,23 @@ function center(e){
 	//console.log(center); //527.5
 		// set it in the middle horizontally
 	title.style.right = center - width / 2 + 'px';
+
+  //title.style.textAlign = "center";
 }
+
 function right(e){
 	var title= document.getElementsByClassName(e)[0];
 	title.style.right = 0+'px';
 	title.style.marginRight= '3vh';//if this is changed, has to change in the css inside barTitle
 }
+
 center('maintext');
 center('footTitle');
 
 if (matchMedia('(min-width: 900px)').matches) {
-center('barTitle');
+	center('barTitle');
 }
+
 /*reload page when window is resized, so that javascr is reloaded with the new width and h of the viewport. 
 location refers to the url*/
 window.onresize = function(){
