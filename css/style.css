@@ -293,10 +293,10 @@ header {
       grid-area: conteudo; } }
 
 .centralContent {
-  margin: 3vh auto auto 3vh; }
+  margin: 15vh auto 0 auto; }
   @media (min-width: 900px) {
     .centralContent {
-      margin: 11vh 0 0 11vh; } }
+      margin: 15vh auto 0 auto; } }
   .centralContent p {
     font-size: 40px;
     /*text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,

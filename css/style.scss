@@ -321,10 +321,10 @@
 		}
 		.centralContent{
 			@include bigDisplay{
-				margin:11vh 0 0 11vh;
+				margin: 15vh auto 0 auto ; //11vh 0 0 11vh;
 			}
 
-			margin:3vh auto auto 3vh;
+			margin: 15vh auto 0 auto ;//3vh auto auto 3vh;
 			
 			p{
 				font-size: 40px;
