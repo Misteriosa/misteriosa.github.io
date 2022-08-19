@@ -308,10 +308,13 @@ header {
     line-height: 1.26;
     letter-spacing: 0.09em; }
   .centralContent .text {
-    width: 60%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: left; }
+    @media (min-width: 900px) {
+      .centralContent .text {
+        width: 60%; } }
     .centralContent .text li {
       color: #f4b7b7;
       line-height: 1.3;
