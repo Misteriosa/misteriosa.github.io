@@ -104,13 +104,13 @@
 			position: sticky;
 		  	top: 0px;
 			grid-area: titulo;
-			background-color: #FFB7B7; /* #6A00FF; FFC899 larj claro FFB7B7 rosa FCBE97 laranj */
+			background-color: #ff997a; //laranja //#FFB7B7; /* #6A00FF; FFC899 larj claro FFB7B7 rosa FCBE97 laranj */
 		}
 		.positioned {
 			height: 7vh;/*Se muda isso, tem q mudar os 'top' e 'height' no menu. 1vh = 1% viewport height*/
   			width: 0%;
 			/*background: rgba(252,  93, 104,.3); */
-			background: #ff997a; /*laranja*/
+			background: #794c72; //roxo  /*#ff997a; laranja*/
 		}
 
 		.barTitle{
@@ -345,6 +345,12 @@
 				margin-left: auto;
   				margin-right: auto;
 				text-align: left;
+
+				li{
+					color: #f4b7b7;
+					line-height: 1.3;
+					letter-spacing: 0.09em;
+				}
 			}
 		}
 		#main2{
@@ -376,6 +382,7 @@
 			grid-area: span 1 / navL-start / conteudod-start / span 2;
 			/*right cell doesnt occupy left cell when media is desktop*/
 			@include bigDisplay{grid-area: conteudoc;}
+
 		}
 		#main4{
 			overflow: auto;
@@ -471,8 +478,9 @@
 			opacity: 1;
 			transition: 2s opacity;
 
-			background: #a249ae;
+			background: #a249ae;		
 		}
+
 		#maine.fade-out,#main2.fade-out,#main3.fade-out,#main4.fade-out,#main5.fade-out,#main6.fade-out, #main7.fade-out,#main8.fade-out{
 			opacity: 0;
 			transition: none;
@@ -494,9 +502,12 @@
 		}/*to generate code for text shapes: https://csswarp.eleqtriq.com/*/
 
 		.video{
-			width: 90vw;
+			width: 90%; //90vw;
+			display: block;
+			margin: auto;
+
 			@include bigDisplay{
-				width: 60vw;
+				width: 60%; //60vw;
 			}
 
 		}
@@ -521,4 +532,14 @@
   .navL li{
     margin: 2.5vh auto;
   }
+}
+
+li{
+	list-style-type: none;
+}
+
+#main3, #main5, #main7{
+	h2{
+		margin: 0 0 10px 0;
+	}
 }
