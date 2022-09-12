@@ -35,21 +35,21 @@ function right(e){
 center('maintext');
 center('footTitle');
 
-if (matchMedia('(min-width: 900px)').matches) {
-	center('barTitle');
-}
+// if (matchMedia('(min-width: 900px)').matches) {
+// 	center('barTitle');
+// }
 
 /*reload page when window is resized, so that javascr is reloaded with the new width and h of the viewport. 
 location refers to the url*/
 window.onresize = function(){
 	center('maintext');
 	center('footTitle');
-	right('barTitle');
+	// right('barTitle');
 	// navL disappears with small screen
 	document.getElementsByClassName('navL')[0].style.display='none';
 
 	if (matchMedia('(min-width: 900px)').matches) {
-	center('barTitle');
+	// center('barTitle');
 	// navL appears with big screen
 	document.getElementsByClassName('navL')[0].style.display='block';
 }}
@@ -57,48 +57,61 @@ window.onresize = function(){
 /*page transition. 
 To do: Treat cases like Command + click (which opens the page in new tab) 
 */
-	/*Add event to all links
-	Purposely binding the listener on the document object
-	so that it intercept anchors added in future*/
-	document.addEventListener('click', function(e) {
-	  var el = e.target;
-	  // Go up in the nodelist until find a node with .href (HTMLAnchorElement)
-	  while (el && !el.href) {
-	    el = el.parentNode;
-	  }
-	  if (el) {
-	    //e.preventDefault();
-	    var parts = el.href.split("#");
+/*Add event to all links
+Purposely binding the listener on the document object
+so that it intercept anchors added in future*/
+document.addEventListener('click', function(e) {
+  var el = e.target;
+  // Go up in the nodelist until find a node with .href (HTMLAnchorElement)
+  while (el && !el.href) {
+    el = el.parentNode;
+  }
+
+  if (el) {
+    //e.preventDefault();
+    var parts = el.href.split("#");
 		var result = parts[parts.length - 1]; // Or parts.pop();
 
 		$('#'+result).addClass('fade-out');  
 		setTimeout(function(){   //setTimeout necessary cus adding and removing class wont work inside same function
 			$('#'+result).removeClass('fade-out')
-		},1); 
-	    return;
-	  }
-	});
+		},1);	
+
+		//highlight the clicked link
+	 	console.dirxml(el.parentNode); //pretty print in da console
+  	//el.parentNode.style.backgroundColor="#d94062";
+
+    return;
+  }
+});
 
 var mobileMenu=document.getElementById('navMobile');
+
 /*when checkbox is clicked, navMobile menu appears*/
-	document.getElementById('toggle').addEventListener('change', function(){
-		mobileMenu.classList.add('navMobileClass');
-		document.body.style.overflow = "hidden"; 
-	});
+document.getElementById('toggle').addEventListener('change', function(){
+	mobileMenu.classList.add('navMobileClass');
+	document.body.style.overflow = "hidden"; 
+});
+
 /*when x is clicked, navMobile menu disappears*/
-	document.getElementById('close').addEventListener('click', function(){
-		mobileMenu.classList.remove('navMobileClass');
-		document.body.style.overflow = "auto"; 
-	});
+document.getElementById('close').addEventListener('click', function(){
+	mobileMenu.classList.remove('navMobileClass');
+	document.body.style.overflow = "auto"; 
+});
+
 /*when link of mobile version of menu is clicked, menu closes and shows section*/
-	var listItems= mobileMenu.firstElementChild.children;
-	for (x in listItems) {
+var listItems= mobileMenu.firstElementChild.children;
+
+for (x in listItems) {
+	if(listItems[x].firstElementChild){
+
 		listItems[x].firstElementChild.addEventListener('click', function(){
 			/*close menu*/
 			mobileMenu.classList.remove('navMobileClass');
 			document.body.style.overflow = "auto"; 
 
 			var link = listItems[i].firstElementChild.getAttribute("href");
-	    	window.location.href = link;
+	    window.location.href = link;
 		});
 	}
+}
