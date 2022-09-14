@@ -20,18 +20,14 @@
 		html{
 			background-color: purple; /*muda a cor da transicao*/
 		}
-		a:active {
+
+		a:active, .active {
 		  text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
 						rgba(252,  93, 104,0.7) -1px -2px 8px,
 						rgba(0,0,0,0.1) 1px 2px 8px,
 						rgba(0,0,0,0.1) -1px -2px 8px;
 		}
-		a:active {
-		  text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
-						rgba(252,  93, 104,0.7) -1px -2px 8px,
-						rgba(0,0,0,0.1) 1px 2px 8px,
-						rgba(0,0,0,0.1) -1px -2px 8px;
-		}
+		
 		a:hover {
 
 		  text-shadow: rgba(252,  93, 104,0.7) 1px 2px 8px,
@@ -55,8 +51,8 @@
 		      "navL conteudod"
 		      "navL conteudoe"
 		      "navL conteudof"
-					"navL conteudog"
-					"navL conteudoh"
+			  "navL conteudog"
+			  "navL conteudoh"
 		      "footer footer";
 		  grid-template-rows: 7vh 100vh 100vh 100vh 100vh 100vh 100vh 100vh 100vh 0vh; /* height */
 		  grid-template-columns: 30% 70% ; /* width */

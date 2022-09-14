@@ -10,10 +10,7 @@ html {
   background-color: purple;
   /*muda a cor da transicao*/ }
 
-a:active {
-  text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px; }
-
-a:active {
+a:active, .active {
   text-shadow: rgba(252, 93, 104, 0.7) 1px 2px 8px, rgba(252, 93, 104, 0.7) -1px -2px 8px, rgba(0, 0, 0, 0.1) 1px 2px 8px, rgba(0, 0, 0, 0.1) -1px -2px 8px; }
 
 a:hover {

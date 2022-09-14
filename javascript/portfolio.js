@@ -78,8 +78,13 @@ document.addEventListener('click', function(e) {
 		},1);	
 
 		//highlight the clicked link
-	 	console.dirxml(el.parentNode); //pretty print in da console
+	 	//console.dirxml(el.parentNode); //pretty print in da console
   	//el.parentNode.style.backgroundColor="#d94062";
+  	// var current = document.getElementsByClassName("active");
+  	// if (current.length > 0) {
+  	// 	current[0].className = current[0].className.replace(" active", "");
+  	// }
+  	// el.parentNode.className += " active";
 
     return;
   }
@@ -115,3 +120,28 @@ for (x in listItems) {
 		});
 	}
 }
+
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('.navL ul li');
+
+window.addEventListener('scroll', () => {
+	let current;
+
+	sections.forEach(section => {
+		const sectionTop = section.offsetTop; // top of section
+		const sectionHeight = section.clientHeight; // height of section
+		
+		if(pageYOffset >= (sectionTop - sectionHeight / 3)){ //pageYOffset scrolled height
+			current = section.getAttribute('id');
+		}
+	})
+
+	navLi.forEach(li => {
+		li.classList.remove('active');
+
+		if(li.classList.contains(current)){
+			li.classList.add('active');
+		}
+	})
+	//console.log('current'+current);
+})
