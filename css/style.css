@@ -463,14 +463,15 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
-  height: 6.5em;
-  width: 6.5em;
-  background-color: #b3b3ff;
+  justify-content: center;
+  height: 8.5em;
+  width: 8.5em;
+  background-color: #f27e3c;
   border-radius: 50%;
   shape-outside: circle(50%);
   float: left;
   margin: 0 2em 0 0;
-  color: black;
+  color: white;
   font-weight: bold; }
 
 /*to generate code for text shapes: https://csswarp.eleqtriq.com/*/
@@ -499,5 +500,14 @@ li {
 
 #main3 h2, #main5 h2, #main7 h2 {
   margin: 0 0 10px 0; }
+
+#box1 {
+  background-color: #f27e3c; }
+
+#box2 {
+  background-color: #e1435b; }
+
+#box3 {
+  background-color: #e05279; }
 
 /*# sourceMappingURL=style.css.map */
